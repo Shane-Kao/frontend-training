@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 選擇器</title>
+    <style type="text/css">
+    /* 標籤名稱選擇器 */
+    body{
+        font-size: 20px;font-family:"微軟正黑體"
+    }
+    h3{
+        font-size: 30px;text-decoration:underline
+    }
+    /* class 選擇器 */
+    div.content{
+        padding: 10px;border:1px dashed
+    }
+    /* id 選擇器 */
+    #btn{
+        border: 1px solid #888888;
+        background-color:green;padding:5px;
+    }
+    /* 虛擬選擇器 */
+    #btn:hover{
+        background-color:red;padding:5px;
+    }
+    input:focus{
+        border:5px solid #ff0000;
+    }
+    /* 階層式選擇器 */
+    .favorite a{
+        color:#0000ff;
+    }
+    .demo a{
+        color:#008800;
+    }
+    </style>
+</head>
+<body>
+    <h3>我的自我介紹</h3>
+    <div class="content favorite">
+        Hi, I am Shane.
+    </div>
+    <h3>我的連結</h3>
+    <ul class="content">
+		<li><a href="http://www.google.com">Google</a></li>
+		<li><a href="http://www.facebook.com">Facebook</a></li>
+	</ul>
+    <h3>我的作品</h3>
+    <ul class="content demo">
+		<li><a href="http://www.google.com">Google</a></li>
+		<li><a href="http://www.facebook.com">Facebook</a></li>
+	</ul>
+    <h3>聯絡</h3>
+    <div class="content">
+        填寫訊息 <input type="text" /><button id="btn">Send</button>
+    </div>
+</body>
+</html>
