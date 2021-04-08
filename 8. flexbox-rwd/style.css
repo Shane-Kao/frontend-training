@@ -1,0 +1,40 @@
+main{
+    display:flex;
+    background-color:#cccccc;
+    justify-content:center;
+    align-items:flex-end;
+    flex-wrap:wrap;
+}
+main>.item{
+    flex:none;width:270px;margin:10px;
+    background-color:#ffcccc;
+}
+
+body{margin:0px;}
+nav{
+    display:flex;
+}
+nav>.A{
+    flex:none;width:100px;
+    background-color:#ffcccc;
+}
+nav>.B{
+    flex:auto;
+    background-color:#ccffcc;
+}
+nav>.C{
+    flex:none;width:100px;
+    background-color:#ccccff;
+}
+
+@media (max-width:1200px){
+    main>.item{
+        width:45%;
+    }
+}
+
+@media (max-width:500px){
+    main>.item{
+        width:90%;
+    }
+}
