@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function init(){
+            var btn=document.getElementById("btn");
+<!--            btn.onclick=function(){-->
+<!--                alert('Clicked');-->
+<!--            }-->
+            var handler=function(){
+                alert('clicked')
+            }
+            btn.addEventListener("click", handler);
+        }
+    </script>
+</head>
+<body onload="init();">
+    <button id="btn">Click</button>
+<!--    <button id="btn" onclick="alert('Clicked');">Click</button>-->
+    <span onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Test</span>
+</body>
+</html>
