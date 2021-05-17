@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+    function getData(pageName){
+        var req=new XMLHttpRequest();
+        req.open("get", "http://localhost:63342/frontend-training/22. ajax/"+pageName)
+        req.onload=function(){
+            var content=document.getElementById("content")
+            content.innerHTML=this.responseText;
+        };
+        req.send();
+    }
+    </script>
+</head>
+<body>
+    <div id="">
+        <span onclick="getData('a.html')">A</span>
+        <span onclick="getData('b.html')">B</span>
+    </div>
+    <hr/>
+    <div id="content"></div>
+</body>
+</html>

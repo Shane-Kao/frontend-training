@@ -9,7 +9,8 @@
 <!--            btn.onclick=function(){-->
 <!--                alert('Clicked');-->
 <!--            }-->
-            var handler=function(){
+            var handler=function(e){
+                alert(e.clientX)
                 alert('clicked')
             }
             btn.addEventListener("click", handler);
